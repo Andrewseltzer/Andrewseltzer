@@ -1,0 +1,1868 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "collapsed_sections": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Andrewseltzer/StatisticsHomework/blob/main/Seltzer_Lab_3.(Homework)ipynb\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 6,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "T5FJyNv01mTd",
+        "outputId": "120362c8-8629-4ed6-f93c-a2636a2e3638"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "0\n",
+            "1\n",
+            "2\n",
+            "3\n",
+            "4\n",
+            "5\n",
+            "6\n",
+            "7\n",
+            "8\n",
+            "9\n"
+          ]
+        }
+      ],
+      "source": [
+        "for i in range(10):\n",
+        "  print(i)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "for i in range(5,8):\n",
+        "  print(i)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "GMPQKHpP-k85",
+        "outputId": "70271c35-5986-42fa-b5e3-4d99c3f62101"
+      },
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "5\n",
+            "6\n",
+            "7\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "for i in range(3):\n",
+        "  print(\"Test Number: \",i)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "7zhLH6nt-t35",
+        "outputId": "e3321d0d-f952-4f00-a64b-1745507fc622"
+      },
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Test Number:  0\n",
+            "Test Number:  1\n",
+            "Test Number:  2\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def square(x):\n",
+        "  return x**2"
+      ],
+      "metadata": {
+        "id": "xXZK7tPT-t6x"
+      },
+      "execution_count": 9,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "square(5)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "zaqyiACj-t-Z",
+        "outputId": "60a9c057-e6bf-4f09-91f2-336e858113f6"
+      },
+      "execution_count": 10,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "25"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 10
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "square(6)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "IfzChgGV_st6",
+        "outputId": "29608b99-8067-4665-df26-842f6137b99e"
+      },
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "36"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 11
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "square(123456)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "-Gj8Yzwt_vNw",
+        "outputId": "94233000-d489-40ee-a726-9fc785a8f64d"
+      },
+      "execution_count": 12,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "15241383936"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 12
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "square(square(5))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "46I3k5_O_yoZ",
+        "outputId": "443014c9-6e45-44d1-c700-2953310adabe"
+      },
+      "execution_count": 13,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "625"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 13
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "square(square(square(2)))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "JAsQNJUG-uBp",
+        "outputId": "1a53384f-20d0-4de9-9355-ff1ccc24596d"
+      },
+      "execution_count": 14,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "256"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 14
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def add_two(x):\n",
+        "  return x+2"
+      ],
+      "metadata": {
+        "id": "621o1w4P_7VJ"
+      },
+      "execution_count": 15,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "add_two(5)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "bvPNEpXg_7Xx",
+        "outputId": "bc2cb622-f4dd-4944-e259-708a929893ec"
+      },
+      "execution_count": 16,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "7"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 16
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "square(add_two(5))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "EGTwZC8U_7aK",
+        "outputId": "27a667f3-c7c7-4582-eed8-0a0cf3207a90"
+      },
+      "execution_count": 17,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "49"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 17
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "choice=\"apple\""
+      ],
+      "metadata": {
+        "id": "d2w5A-m3_7co"
+      },
+      "execution_count": 18,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "if choice == \"apple\":\n",
+        "\n",
+        "  print(\"You choose apples.\")\n",
+        "\n",
+        "else:\n",
+        "\n",
+        "    print(\"You did not choose apples.\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "YG8gPyKG_7fB",
+        "outputId": "ab0bf1a2-e573-45c2-fb94-180833852948"
+      },
+      "execution_count": 19,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "You choose apples.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "if choice == \"apples\":\n",
+        "\n",
+        "  print(\"You choose apples.\")\n",
+        " \n",
+        "\n",
+        "elif choice == \"oramge\":\n",
+        "\n",
+        "  print(\"You choose oranges.\")\n",
+        "\n",
+        "else:\n",
+        "\n",
+        "    print(\"You did not choose apples or oranges\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Qmzf5QSf_7hg",
+        "outputId": "8fc679f2-0651-4353-aeee-c115b69652bd"
+      },
+      "execution_count": 20,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "You did not choose apples or oranges\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "choice = input(\"Please enter your choice (i.e. apple): \")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ZUgkpGI8_7kn",
+        "outputId": "73c87cdc-a049-42ca-cde8-f9e99826a860"
+      },
+      "execution_count": 22,
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "Please enter your choice (i.e. apple): apple\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import numpy as np"
+      ],
+      "metadata": {
+        "id": "mbqKFTfZCX-C"
+      },
+      "execution_count": 23,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "np.random.permutation(52)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ecmA0h57DEta",
+        "outputId": "85c70f26-fe3a-4707-a3e9-c89b188cc625"
+      },
+      "execution_count": 24,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "array([24, 40,  1, 49,  3, 45, 31, 18,  9, 27, 11, 43, 47, 15, 29, 26, 38,\n",
+              "        5, 21, 51, 34, 13,  4, 44, 25, 32,  7, 46, 37, 39, 35,  2, 12,  8,\n",
+              "       30, 17,  6, 28, 48, 10, 33,  0, 16, 41, 19, 50, 22, 20, 23, 42, 36,\n",
+              "       14])"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 24
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "card= np.random.permutation(52)"
+      ],
+      "metadata": {
+        "id": "zF1pgYToCYAl"
+      },
+      "execution_count": 25,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "<img src='http://www.milefoot.com/math/discrete/counting/images/cards.png'>"
+      ],
+      "metadata": {
+        "id": "Qz47b7A3DzDZ"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "np.arange(52).reshape(4,13)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "dEnPuA65CYIa",
+        "outputId": "0374f88d-147b-4807-fbc0-444e123605fb"
+      },
+      "execution_count": 26,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "array([[ 0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12],\n",
+              "       [13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25],\n",
+              "       [26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38],\n",
+              "       [39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51]])"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 26
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "np.arange(52).reshape(4,13)%13"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "HBFU1pyBCYLr",
+        "outputId": "f7ce7c23-868f-4280-e3af-c78f8cfa555f"
+      },
+      "execution_count": 27,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "array([[ 0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12],\n",
+              "       [ 0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12],\n",
+              "       [ 0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12],\n",
+              "       [ 0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12]])"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 27
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "np.arange(52).reshape(4,13)//13"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "YlNZV9o8FD1p",
+        "outputId": "f48967d9-54c7-4b85-e6a3-f7568117bd13"
+      },
+      "execution_count": 28,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "array([[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],\n",
+              "       [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],\n",
+              "       [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],\n",
+              "       [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3]])"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 28
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "suits = ['Clubs','spades','Hearts','Diamonds']\n",
+        "names = ['Ace','Two','Three','Four','Five','Six','Seven','Eight','Nine','Ten','Jack','Queen','King']"
+      ],
+      "metadata": {
+        "id": "MwP5yNSkFD4o"
+      },
+      "execution_count": 29,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "suits"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "KSGcP06CFD7Z",
+        "outputId": "9c838481-5d79-461e-a5f8-84c427e0b6de"
+      },
+      "execution_count": 30,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "['Clubs', 'spades', 'Hearts', 'Diamonds']"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 30
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "suits[0]"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 35
+        },
+        "id": "SvfR4ACJFD96",
+        "outputId": "f234140d-5fda-4b08-c822-f4150234c618"
+      },
+      "execution_count": 31,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "'Clubs'"
+            ],
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            }
+          },
+          "metadata": {},
+          "execution_count": 31
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "names[1]"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 35
+        },
+        "id": "my6MeykSFEAj",
+        "outputId": "3aa6a83d-2276-486c-f154-d4b08d64ff7c"
+      },
+      "execution_count": 32,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "'Two'"
+            ],
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            }
+          },
+          "metadata": {},
+          "execution_count": 32
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def card_name(card_number):\n",
+        "\n",
+        "  suit = card_number//13\n",
+        "  name = card_number%13\n",
+        "\n",
+        "  return names[name] + \" of\" + suits[suit]"
+      ],
+      "metadata": {
+        "id": "8uEn-xjpFEDQ"
+      },
+      "execution_count": 33,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "card_name(0)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 35
+        },
+        "id": "yitBIxjqFEFy",
+        "outputId": "4ad62202-c59d-439e-c468-ec58abbb1913"
+      },
+      "execution_count": 34,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "'Ace ofClubs'"
+            ],
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            }
+          },
+          "metadata": {},
+          "execution_count": 34
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "card_name(1)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 35
+        },
+        "id": "9kMAr1urFEIZ",
+        "outputId": "64e90766-23de-4843-ee89-94c81e70dff1"
+      },
+      "execution_count": 35,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "'Two ofClubs'"
+            ],
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            }
+          },
+          "metadata": {},
+          "execution_count": 35
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "card_name(2)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 35
+        },
+        "id": "3UUErcLbFEKx",
+        "outputId": "8f644bb0-29de-49bb-a9a6-078293c362bc"
+      },
+      "execution_count": 36,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "'Three ofClubs'"
+            ],
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            }
+          },
+          "metadata": {},
+          "execution_count": 36
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "card_name(51)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 35
+        },
+        "id": "wL6Tt8BfCYOj",
+        "outputId": "cf7f62c2-0fcc-4e23-d567-a01887059059"
+      },
+      "execution_count": 37,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "'King ofDiamonds'"
+            ],
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            }
+          },
+          "metadata": {},
+          "execution_count": 37
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "card_name(13)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 35
+        },
+        "id": "6kSKCZwqCYRL",
+        "outputId": "3bd26666-03cd-4303-fd74-90dfb4523f2d"
+      },
+      "execution_count": 38,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "'Ace ofspades'"
+            ],
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            }
+          },
+          "metadata": {},
+          "execution_count": 38
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "cards = np.random.permutation(52)"
+      ],
+      "metadata": {
+        "id": "GkOWtmd_HRAa"
+      },
+      "execution_count": 39,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "top_of_deck       =card_name(cards[0])\n",
+        "second_card_in_deck = card_name(cards[1])\n",
+        "last_card_in_deck  = card_name(cards[-1])"
+      ],
+      "metadata": {
+        "id": "H85mG_wPHRDI"
+      },
+      "execution_count": 40,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "top_of_deck,second_card_in_deck,last_card_in_deck"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "SUNY9V1DHRFg",
+        "outputId": "43190805-84ec-478f-c174-4c0f415b4223"
+      },
+      "execution_count": 41,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "('Queen ofspades', 'Three ofspades', 'Two ofspades')"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 41
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "for i in range(5):\n",
+        "    print(card_name(cards[i]))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Vy4YdksqHRIP",
+        "outputId": "f29a042b-cd3e-43e1-9d7f-e20d6f722f35"
+      },
+      "execution_count": 42,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Queen ofspades\n",
+            "Three ofspades\n",
+            "Eight ofClubs\n",
+            "King ofHearts\n",
+            "Jack ofHearts\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "for i in range(15):\n",
+        "    print(card_name(cards[i]))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "8GqDg2RmHRML",
+        "outputId": "684c992b-1a18-4757-b3ab-5ed74da7a7b3"
+      },
+      "execution_count": 43,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Queen ofspades\n",
+            "Three ofspades\n",
+            "Eight ofClubs\n",
+            "King ofHearts\n",
+            "Jack ofHearts\n",
+            "King ofspades\n",
+            "Three ofHearts\n",
+            "Five ofDiamonds\n",
+            "Ace ofDiamonds\n",
+            "Six ofClubs\n",
+            "Three ofClubs\n",
+            "Five ofHearts\n",
+            "Jack ofspades\n",
+            "Three ofDiamonds\n",
+            "Eight ofspades\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "card_url_head = \"https://www.improvemagic.com/wp-content/uploads/2020/11/\"\n",
+        "card_url_tail = \".png\""
+      ],
+      "metadata": {
+        "id": "IEol5uYZHROq"
+      },
+      "execution_count": 44,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "suits = ['k','p','s','l']\n",
+        "card = ['a','2','3','4','5','6','7','8','9','10','j','q','k']"
+      ],
+      "metadata": {
+        "id": "GlPRPaEOHRRo"
+      },
+      "execution_count": 45,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "i = np.random.randint(4)\n",
+        "j = np.random.randint(13)"
+      ],
+      "metadata": {
+        "id": "EiyDOvZNHRUv"
+      },
+      "execution_count": 46,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "i,j"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "BUqWJD62HRXn",
+        "outputId": "f3dd10c5-ff0e-45eb-fe95-5d17d4c14898"
+      },
+      "execution_count": 47,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "(1, 0)"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 47
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "suits[i]"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 35
+        },
+        "id": "Zb85A-dF1ikw",
+        "outputId": "17d75e24-a867-4dab-ca27-a4b18bdf6c10"
+      },
+      "execution_count": 54,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "'p'"
+            ],
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            }
+          },
+          "metadata": {},
+          "execution_count": 54
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "card[j]"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 35
+        },
+        "id": "186roKzy1t3O",
+        "outputId": "5145e9b6-e075-4f20-fb4e-04d059eada64"
+      },
+      "execution_count": 55,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "'a'"
+            ],
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            }
+          },
+          "metadata": {},
+          "execution_count": 55
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "2LtEH5Bt1iac"
+      },
+      "execution_count": 55,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "from IPython.core.display import display, HTML"
+      ],
+      "metadata": {
+        "id": "TWa3FxdmHRZ4"
+      },
+      "execution_count": 56,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def show_img(img):\n",
+        "  display(HTML('<img src=' + img + '>'))"
+      ],
+      "metadata": {
+        "id": "wa0WJwHMK-k_"
+      },
+      "execution_count": 57,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "img = card_url_head + suits[i] + card[j] + card_url_tail"
+      ],
+      "metadata": {
+        "id": "iP6hsFy2K-oU"
+      },
+      "execution_count": 60,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "show_img(img)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 334
+        },
+        "id": "Ycut7-6PK-q-",
+        "outputId": "a42fb14e-a8a5-441a-be60-f6cbda8d37f3"
+      },
+      "execution_count": 62,
+      "outputs": [
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "<IPython.core.display.HTML object>"
+            ],
+            "text/html": [
+              "<img src=https://www.improvemagic.com/wp-content/uploads/2020/11/pa.png>"
+            ]
+          },
+          "metadata": {}
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def card_image(card_number):\n",
+        "    \n",
+        "    i = card_number//13\n",
+        "    j = card_number%13\n",
+        "\n",
+        "    return suits[i]+card[j]"
+      ],
+      "metadata": {
+        "id": "F2ZyqfYuK-tV"
+      },
+      "execution_count": 75,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "card_image(3)"
+      ],
+      "metadata": {
+        "id": "zBzHLtizHRch",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 35
+        },
+        "outputId": "045a5a06-bf2d-441c-9c68-df7a670b3990"
+      },
+      "execution_count": 76,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "'k4'"
+            ],
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            }
+          },
+          "metadata": {},
+          "execution_count": 76
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "img = card_url_head + card_image(3) + card_url_tail"
+      ],
+      "metadata": {
+        "id": "cRhL-7E3HRe7"
+      },
+      "execution_count": 77,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "show_img(img)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 333
+        },
+        "id": "glPiAElr3BeL",
+        "outputId": "2398f26a-c8e5-4920-920c-d80352ade889"
+      },
+      "execution_count": 78,
+      "outputs": [
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "<IPython.core.display.HTML object>"
+            ],
+            "text/html": [
+              "<img src=https://www.improvemagic.com/wp-content/uploads/2020/11/k4.png>"
+            ]
+          },
+          "metadata": {}
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "for i in range(52):\n",
+        "    img = card_url_head + card_image(i) + card_url_tail\n",
+        "    show_img(img)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 1000
+        },
+        "id": "y2oRHTI83Ic0",
+        "outputId": "2a847a86-e003-473e-ed67-c8e8607fc046"
+      },
+      "execution_count": 79,
+      "outputs": [
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "<IPython.core.display.HTML object>"
+            ],
+            "text/html": [
+              "<img src=https://www.improvemagic.com/wp-content/uploads/2020/11/ka.png>"
+            ]
+          },
+          "metadata": {}
+        },
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "<IPython.core.display.HTML object>"
+            ],
+            "text/html": [
+              "<img src=https://www.improvemagic.com/wp-content/uploads/2020/11/k2.png>"
+            ]
+          },
+          "metadata": {}
+        },
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "<IPython.core.display.HTML object>"
+            ],
+            "text/html": [
+              "<img src=https://www.improvemagic.com/wp-content/uploads/2020/11/k3.png>"
+            ]
+          },
+          "metadata": {}
+        },
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "<IPython.core.display.HTML object>"
+            ],
+            "text/html": [
+              "<img src=https://www.improvemagic.com/wp-content/uploads/2020/11/k4.png>"
+            ]
+          },
+          "metadata": {}
+        },
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "<IPython.core.display.HTML object>"
+            ],
+            "text/html": [
+              "<img src=https://www.improvemagic.com/wp-content/uploads/2020/11/k5.png>"
+            ]
+          },
+          "metadata": {}
+        },
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "<IPython.core.display.HTML object>"
+            ],
+            "text/html": [
+              "<img src=https://www.improvemagic.com/wp-content/uploads/2020/11/k6.png>"
+            ]
+          },
+          "metadata": {}
+        },
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "<IPython.core.display.HTML object>"
+            ],
+            "text/html": [
+              "<img src=https://www.improvemagic.com/wp-content/uploads/2020/11/k7.png>"
+            ]
+          },
+          "metadata": {}
+        },
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "<IPython.core.display.HTML object>"
+            ],
+            "text/html": [
+              "<img src=https://www.improvemagic.com/wp-content/uploads/2020/11/k8.png>"
+            ]
+          },
+          "metadata": {}
+        },
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "<IPython.core.display.HTML object>"
+            ],
+            "text/html": [
+              "<img src=https://www.improvemagic.com/wp-content/uploads/2020/11/k9.png>"
+            ]
+          },
+          "metadata": {}
+        },
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "<IPython.core.display.HTML object>"
+            ],
+            "text/html": [
+              "<img src=https://www.improvemagic.com/wp-content/uploads/2020/11/k10.png>"
+            ]
+          },
+          "metadata": {}
+        },
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "<IPython.core.display.HTML object>"
+            ],
+            "text/html": [
+              "<img src=https://www.improvemagic.com/wp-content/uploads/2020/11/kj.png>"
+            ]
+          },
+          "metadata": {}
+        },
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "<IPython.core.display.HTML object>"
+            ],
+            "text/html": [
+              "<img src=https://www.improvemagic.com/wp-content/uploads/2020/11/kq.png>"
+            ]
+          },
+          "metadata": {}
+        },
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "<IPython.core.display.HTML object>"
+            ],
+            "text/html": [
+              "<img src=https://www.improvemagic.com/wp-content/uploads/2020/11/kk.png>"
+            ]
+          },
+          "metadata": {}
+        },
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "<IPython.core.display.HTML object>"
+            ],
+            "text/html": [
+              "<img src=https://www.improvemagic.com/wp-content/uploads/2020/11/pa.png>"
+            ]
+          },
+          "metadata": {}
+        },
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "<IPython.core.display.HTML object>"
+            ],
+            "text/html": [
+              "<img src=https://www.improvemagic.com/wp-content/uploads/2020/11/p2.png>"
+            ]
+          },
+          "metadata": {}
+        },
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "<IPython.core.display.HTML object>"
+            ],
+            "text/html": [
+              "<img src=https://www.improvemagic.com/wp-content/uploads/2020/11/p3.png>"
+            ]
+          },
+          "metadata": {}
+        },
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "<IPython.core.display.HTML object>"
+            ],
+            "text/html": [
+              "<img src=https://www.improvemagic.com/wp-content/uploads/2020/11/p4.png>"
+            ]
+          },
+          "metadata": {}
+        },
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "<IPython.core.display.HTML object>"
+            ],
+            "text/html": [
+              "<img src=https://www.improvemagic.com/wp-content/uploads/2020/11/p5.png>"
+            ]
+          },
+          "metadata": {}
+        },
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "<IPython.core.display.HTML object>"
+            ],
+            "text/html": [
+              "<img src=https://www.improvemagic.com/wp-content/uploads/2020/11/p6.png>"
+            ]
+          },
+          "metadata": {}
+        },
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "<IPython.core.display.HTML object>"
+            ],
+            "text/html": [
+              "<img src=https://www.improvemagic.com/wp-content/uploads/2020/11/p7.png>"
+            ]
+          },
+          "metadata": {}
+        },
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "<IPython.core.display.HTML object>"
+            ],
+            "text/html": [
+              "<img src=https://www.improvemagic.com/wp-content/uploads/2020/11/p8.png>"
+            ]
+          },
+          "metadata": {}
+        },
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "<IPython.core.display.HTML object>"
+            ],
+            "text/html": [
+              "<img src=https://www.improvemagic.com/wp-content/uploads/2020/11/p9.png>"
+            ]
+          },
+          "metadata": {}
+        },
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "<IPython.core.display.HTML object>"
+            ],
+            "text/html": [
+              "<img src=https://www.improvemagic.com/wp-content/uploads/2020/11/p10.png>"
+            ]
+          },
+          "metadata": {}
+        },
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "<IPython.core.display.HTML object>"
+            ],
+            "text/html": [
+              "<img src=https://www.improvemagic.com/wp-content/uploads/2020/11/pj.png>"
+            ]
+          },
+          "metadata": {}
+        },
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "<IPython.core.display.HTML object>"
+            ],
+            "text/html": [
+              "<img src=https://www.improvemagic.com/wp-content/uploads/2020/11/pq.png>"
+            ]
+          },
+          "metadata": {}
+        },
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "<IPython.core.display.HTML object>"
+            ],
+            "text/html": [
+              "<img src=https://www.improvemagic.com/wp-content/uploads/2020/11/pk.png>"
+            ]
+          },
+          "metadata": {}
+        },
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "<IPython.core.display.HTML object>"
+            ],
+            "text/html": [
+              "<img src=https://www.improvemagic.com/wp-content/uploads/2020/11/sa.png>"
+            ]
+          },
+          "metadata": {}
+        },
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "<IPython.core.display.HTML object>"
+            ],
+            "text/html": [
+              "<img src=https://www.improvemagic.com/wp-content/uploads/2020/11/s2.png>"
+            ]
+          },
+          "metadata": {}
+        },
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "<IPython.core.display.HTML object>"
+            ],
+            "text/html": [
+              "<img src=https://www.improvemagic.com/wp-content/uploads/2020/11/s3.png>"
+            ]
+          },
+          "metadata": {}
+        },
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "<IPython.core.display.HTML object>"
+            ],
+            "text/html": [
+              "<img src=https://www.improvemagic.com/wp-content/uploads/2020/11/s4.png>"
+            ]
+          },
+          "metadata": {}
+        },
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "<IPython.core.display.HTML object>"
+            ],
+            "text/html": [
+              "<img src=https://www.improvemagic.com/wp-content/uploads/2020/11/s5.png>"
+            ]
+          },
+          "metadata": {}
+        },
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "<IPython.core.display.HTML object>"
+            ],
+            "text/html": [
+              "<img src=https://www.improvemagic.com/wp-content/uploads/2020/11/s6.png>"
+            ]
+          },
+          "metadata": {}
+        },
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "<IPython.core.display.HTML object>"
+            ],
+            "text/html": [
+              "<img src=https://www.improvemagic.com/wp-content/uploads/2020/11/s7.png>"
+            ]
+          },
+          "metadata": {}
+        },
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "<IPython.core.display.HTML object>"
+            ],
+            "text/html": [
+              "<img src=https://www.improvemagic.com/wp-content/uploads/2020/11/s8.png>"
+            ]
+          },
+          "metadata": {}
+        },
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "<IPython.core.display.HTML object>"
+            ],
+            "text/html": [
+              "<img src=https://www.improvemagic.com/wp-content/uploads/2020/11/s9.png>"
+            ]
+          },
+          "metadata": {}
+        },
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "<IPython.core.display.HTML object>"
+            ],
+            "text/html": [
+              "<img src=https://www.improvemagic.com/wp-content/uploads/2020/11/s10.png>"
+            ]
+          },
+          "metadata": {}
+        },
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "<IPython.core.display.HTML object>"
+            ],
+            "text/html": [
+              "<img src=https://www.improvemagic.com/wp-content/uploads/2020/11/sj.png>"
+            ]
+          },
+          "metadata": {}
+        },
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "<IPython.core.display.HTML object>"
+            ],
+            "text/html": [
+              "<img src=https://www.improvemagic.com/wp-content/uploads/2020/11/sq.png>"
+            ]
+          },
+          "metadata": {}
+        },
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "<IPython.core.display.HTML object>"
+            ],
+            "text/html": [
+              "<img src=https://www.improvemagic.com/wp-content/uploads/2020/11/sk.png>"
+            ]
+          },
+          "metadata": {}
+        },
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "<IPython.core.display.HTML object>"
+            ],
+            "text/html": [
+              "<img src=https://www.improvemagic.com/wp-content/uploads/2020/11/la.png>"
+            ]
+          },
+          "metadata": {}
+        },
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "<IPython.core.display.HTML object>"
+            ],
+            "text/html": [
+              "<img src=https://www.improvemagic.com/wp-content/uploads/2020/11/l2.png>"
+            ]
+          },
+          "metadata": {}
+        },
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "<IPython.core.display.HTML object>"
+            ],
+            "text/html": [
+              "<img src=https://www.improvemagic.com/wp-content/uploads/2020/11/l3.png>"
+            ]
+          },
+          "metadata": {}
+        },
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "<IPython.core.display.HTML object>"
+            ],
+            "text/html": [
+              "<img src=https://www.improvemagic.com/wp-content/uploads/2020/11/l4.png>"
+            ]
+          },
+          "metadata": {}
+        },
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "<IPython.core.display.HTML object>"
+            ],
+            "text/html": [
+              "<img src=https://www.improvemagic.com/wp-content/uploads/2020/11/l5.png>"
+            ]
+          },
+          "metadata": {}
+        },
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "<IPython.core.display.HTML object>"
+            ],
+            "text/html": [
+              "<img src=https://www.improvemagic.com/wp-content/uploads/2020/11/l6.png>"
+            ]
+          },
+          "metadata": {}
+        },
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "<IPython.core.display.HTML object>"
+            ],
+            "text/html": [
+              "<img src=https://www.improvemagic.com/wp-content/uploads/2020/11/l7.png>"
+            ]
+          },
+          "metadata": {}
+        },
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "<IPython.core.display.HTML object>"
+            ],
+            "text/html": [
+              "<img src=https://www.improvemagic.com/wp-content/uploads/2020/11/l8.png>"
+            ]
+          },
+          "metadata": {}
+        },
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "<IPython.core.display.HTML object>"
+            ],
+            "text/html": [
+              "<img src=https://www.improvemagic.com/wp-content/uploads/2020/11/l9.png>"
+            ]
+          },
+          "metadata": {}
+        },
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "<IPython.core.display.HTML object>"
+            ],
+            "text/html": [
+              "<img src=https://www.improvemagic.com/wp-content/uploads/2020/11/l10.png>"
+            ]
+          },
+          "metadata": {}
+        },
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "<IPython.core.display.HTML object>"
+            ],
+            "text/html": [
+              "<img src=https://www.improvemagic.com/wp-content/uploads/2020/11/lj.png>"
+            ]
+          },
+          "metadata": {}
+        },
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "<IPython.core.display.HTML object>"
+            ],
+            "text/html": [
+              "<img src=https://www.improvemagic.com/wp-content/uploads/2020/11/lq.png>"
+            ]
+          },
+          "metadata": {}
+        },
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "<IPython.core.display.HTML object>"
+            ],
+            "text/html": [
+              "<img src=https://www.improvemagic.com/wp-content/uploads/2020/11/lk.png>"
+            ]
+          },
+          "metadata": {}
+        }
+      ]
+    }
+  ]
+}
